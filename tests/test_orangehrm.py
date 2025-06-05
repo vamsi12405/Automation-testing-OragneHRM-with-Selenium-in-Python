@@ -3,14 +3,14 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 print("NEW PYTHONPATH:", sys.path)
 import pytest
 from selenium import webdriver
-from pages.login_page import LoginPage
-from pages.dashboard_page import DashboardPage
-from pages.admin_page import AdminPage
-from pages.leave_page import LeavePage
-from pages.pim_page import PimPage
-from pages.myinfo_page import MyInfoPage
-from pages.time_page import TimePage
-from pages.directory_page import DirectoryPage
+from OrangeHRM.Pages.login_page import LoginPage
+from OrangeHRM.Pages.dashboard_page import DashboardPage
+from OrangeHRM.Pages.admin_page import AdminPage
+from OrangeHRM.Pages.leave_page import LeavePage
+from OrangeHRM.Pages.pim_page import PimPage
+from OrangeHRM.Pages.myinfo_page import MyInfoPage
+from OrangeHRM.Pages.time_page import TimePage
+from OrangeHRM.Pages.directory_page import DirectoryPage
 
 @pytest.fixture(scope="module")
 def driver():
